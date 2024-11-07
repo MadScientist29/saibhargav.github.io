@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ecommerce Sales Dashboard - Sai Bhargav Karnati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styling the body with a dark theme */
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+        .navbar a:hover {
+            color: #00d4ff !important;
+        }
+        .hero-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .summary-card {
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        .summary-card h5 {
+            color: #00d4ff;
+        }
+        .btn-view-dashboard {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-view-dashboard:hover {
+            background-color: #0056b3;
+        }
+        .btn-back {
+            background-color: #f8f9fa;
+            color: #343a40;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-back:hover {
+            background-color: #e0e0e0;
+        }
+        .feature-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sai Bhargav Karnati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Ecommerce Sales Dashboard Overview</h1>
+            <p class="lead">Gain insights into ecommerce sales, revenue, and customer engagement.</p>
+            <img src="img/ecommerce_dashboard_img.png" alt="Ecommerce Sales Dashboard" class="dashboard-img mt-4">
+            <div class="mt-4">
+                <!--  <a href="https://umbc-my.sharepoint.com/:u:/g/personal/skarnat1_umbc_edu/abc123" class="btn btn-view-dashboard">View Dashboard</a>  -->
+                <a href="https://medium.com/@saibhargavkarnati/madhav-ecommerce-sales-dashboard-powerbi-e4b2675077b5" class="btn btn-view-dashboard ms-2">Read Full Blog on Medium</a>
+                <a href="https://github.com/MadScientist29/Madhav-Ecommerce-Sales-Dashboard" class="btn btn-view-dashboard ms-2">GitHub Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">Key Metrics & Insights</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Total Sales & Revenue</h5>
+                    <p>Revenue: $5.6M<br>Total Transactions: 3.2K<br>Average Order Value: $60</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Top Selling Products</h5>
+                    <p>Electronics: $1.8M<br>Clothing: $1.4M<br>Home Goods: $1.1M</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Customer Demographics</h5>
+                    <p>Age Group 25-34: 45%<br>Location: Urban 65%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Sales by Region</h5>
+                    <p>East: $1.8M<br>West: $1.4M<br>Central: $1.2M</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Top Customer Segments</h5>
+                    <p>Returning Customers: 55%<br>New Customers: 45%</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Sales Trends</h5>
+                    <p>Q4 Sales Peak at $1.6M<br>Consistent Growth in Q3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="text-center">Dashboard Features & Analysis</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Revenue by Product Category</h5>
+                        <p>Pie chart showing the percentage revenue distribution across major categories like Electronics and Clothing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Seasonal Sales Analysis</h5>
+                        <p>Line chart highlights seasonality, with spikes during holiday seasons in Q4.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Customer Segmentation Analysis</h5>
+                        <p>Detailed demographic breakdowns by age, location, and spending habits.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Sales Channel Performance</h5>
+                        <p>Analysis of sales across online and offline channels, with online making up 65% of total sales.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Go Back Button -->
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-back">Go Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sai Bhargav Karnati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
