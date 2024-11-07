@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects - Sai Bhargav Karnati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Page Styling */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Trendy Navbar Styling */
+        .navbar, footer {
+            background-color: #1f1f1f; /* Dark background */
+        }
+        .navbar-brand, .nav-link {
+             /* White text for navbar items */
+            color: #e04e3a;
+        }
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            padding: 8px 16px;
+            margin: 0 5px;
+        }
+        .nav-link::before, .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #ff7300;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        .nav-link:hover::before, .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .navbar-toggler-icon {
+            color: #00BFFF;
+        }
+
+                .nav-link.active {
+            color: #FFA500; /* Orange color when active */
+            font-weight: bold; /* Optional: keep it bold */
+        }
+        /* Footer Styling */
+        footer {
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        /* Styling the project tiles */
+        .project-tile {
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .project-tile img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.4s ease;
+        }
+        .project-tile:hover img {
+            transform: scale(1.05);
+        }
+        .project-tile .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .project-tile:hover .overlay {
+            opacity: 1;
+        }
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: rgb(86, 228, 127);
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 1.1rem;
+            }
+            .project-tile {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+        h2 {
+            color: rgb(86, 228, 127);
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: #e04e3a;">Sai Bhargav Karnati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: #e2d8d1;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html"><strong>Projects</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="container mt-5">
+        <h2 class="text-center"><strong>PROJECTS</strong></h2>
+        <div class="row mt-4">
+            <!-- Blinkit Dashboard Project Tile -->
+            <div class="col-md-6 project-tile" onclick="location.href='blinkit_dashboard.html';">
+                <img src="img/blinkit_dashboard.png" alt="Blinkit Dashboard Image">
+                <div class="overlay">
+                    <p>A Power BI dashboard with detailed insights into Blinkit's performance metrics like revenue, customer engagement, and sales performance.</p>
+                </div>
+                <div class="project-title">Blinkit Dashboard</div>
+            </div>
+
+            <!-- HR Analytics Dashboard Project Tile -->
+            <div class="col-md-6 project-tile" onclick="location.href='hr_analytics_dashboard.html';">
+                <img src="img/HR Analytics Dashboard.png" alt="HR Analytics Dashboard Image">
+                <div class="overlay">
+                    <p>Analyzed employee attrition and key HR metrics using Power BI to identify patterns and improve retention strategies.</p>
+                </div>
+                <div class="project-title">HR Analytics Dashboard</div>
+            </div>
+
+            <!-- Market Sales Prediction Project Tile -->
+            <div class="col-md-6 project-tile" onclick="location.href='market_sales_prediction.html';">
+                <img src="img/market_sales_dashboard.jpg" alt="Market Sales Prediction Image">
+                <div class="overlay">
+                    <p>Improved sales forecast accuracy by 28% using real-time data and predictive analytics in Power BI.</p>
+                </div>
+                <div class="project-title">Market Sales Prediction</div>
+            </div>
+
+            <!-- Credit Card Fraud Detection Project Tile -->
+            <div class="col-md-6 project-tile" onclick="location.href='credit_fraud_detection.html';">
+                <img src="img/fraud_detection.jpg" alt="Credit Card Fraud Detection Image">
+                <div class="overlay">
+                    <p>Developed a machine learning model to detect fraudulent transactions with a 94% accuracy rate.</p>
+                </div>
+                <div class="project-title">Credit Card Fraud Detection</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Sai Bhargav Karnati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

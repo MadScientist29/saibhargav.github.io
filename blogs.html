@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blogs - Sai Bhargav Karnati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styling the body with a dark theme */
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+        .navbar a:hover {
+            color: #00d4ff !important;
+        }
+
+        /* Blog List Section */
+        .blog-list-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+        }
+
+        .blog-card {
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .blog-card h5 {
+            color: #00d4ff;
+        }
+
+        .blog-card img {
+            width: 100%; /* Make the image responsive */
+            height: auto;
+            border-radius: 10px; /* Optional: adds rounded corners to images */
+            margin-bottom: 15px; /* Space between image and title */
+        }
+
+        .btn-read-more {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-read-more:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sai Bhargav Karnati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About & Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blogs.html"><strong>Blogs</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog List Section -->
+    <section class="container blog-list-section mt-5">
+        <h2 class="text-center"><strong>BLOGS ✍️</strong></h2>
+        <div class="row mt-4">
+            <!-- Blog 1: Power of AI -->
+            <div class="col-md-6">
+                <div class="blog-card">
+                    <img src="img/ai_halu.png" alt="AI Hallucinations">
+                    <h5>Power of AI: Hallucinations in Storytelling and Creativity 🤖🎨</h5>
+                    <p>Explore how AI-driven hallucinations contribute to creative storytelling, blurring the lines between fiction and reality. AI systems are increasingly influencing the creative world through surprising, imaginative outputs.</p>
+                    <a href="ai_storytelling_blog.html" class="btn btn-read-more mt-3">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog 2: Emotion2Vec -->
+            <div class="col-md-6">
+                <div class="blog-card">
+                    <img src="img/e2v.png" alt="Emotion2Vec">
+                    <h5>Understanding Emotion2Vec: A Breakthrough in Speech Emotion Recognition 🎙️🧠</h5>
+                    <p>An in-depth exploration of the innovative Emotion2Vec model, which aims to improve how AI understands emotions in speech, unlocking new possibilities in human-computer interaction.</p>
+                    <a href="emotion2vec_blog.html" class="btn btn-read-more mt-3">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog 3: Generative AI -->
+            <div class="col-md-6">
+                <div class="blog-card">
+                    <img src="img/genAI.webp" alt="Generative AI">
+                    <h5>A Beginner’s Guide to Generative AI 💡🤖</h5>
+                    <p>Journey into the realm of generative AI, exploring the foundational concepts of transformer architectures and their role in powering generative models. From text generation to image synthesis, generative AI has opened up new avenues for creativity and innovation.</p>
+                    <a href="genAI_blog.html" class="btn btn-read-more mt-3">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog 4: Introduction to Large Language Models -->
+            <div class="col-md-6">
+                <div class="blog-card">
+                    <img src="img/llm.webp" alt="Large Language Models">
+                    <h5>Introduction to Large Language Models (LLMs) 📚🤖</h5>
+                    <p>Large Language Models (LLMs) are sophisticated machine learning systems that generate human-like text by understanding language patterns. They have diverse applications, including text generation, translation, and sentiment analysis. However, ethical considerations, such as bias and data privacy, must be addressed for responsible use.</p>
+                    <a href="llm_blog.html" class="btn btn-read-more mt-3">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sai Bhargav Karnati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
