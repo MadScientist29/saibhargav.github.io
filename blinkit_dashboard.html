@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blinkit Dashboard - Sai Bhargav Karnati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styling the body with a dark theme */
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+        .navbar a:hover {
+            color: #00d4ff !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .summary-card {
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .summary-card h5 {
+            color: #00d4ff;
+        }
+
+        .btn-view-dashboard {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-view-dashboard:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-back {
+            background-color: #f8f9fa;
+            color: #343a40;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-back:hover {
+            background-color: #e0e0e0;
+        }
+
+        .feature-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+        }
+
+        .feature-section h2 {
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sai Bhargav Karnati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About & Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Blinkit Dashboard Overview</h1>
+            <p class="lead">Comprehensive insights into Blinkit's outlet performance, sales, and consumer preferences.</p>
+            <img src="img\blinkit_dashboard.png" alt="Blinkit Dashboard" class="dashboard-img mt-4">
+            <!-- <a href="https://umbc-my.sharepoint.com/:u:/g/personal/skarnat1_umbc_edu/EYJ0Y7N_NkhKqiW9i1i5qnIBrdcKs0ljS_-zf_8MRr55xg?e=Uiijqk" class="btn btn-view-dashboard mt-4" target="_blank">View Dashboard</a> -->
+            <div class="mt-4">
+                <a href="https://umbc-my.sharepoint.com/:u:/g/personal/skarnat1_umbc_edu/EYJ0Y7N_NkhKqiW9i1i5qnIBrdcKs0ljS_-zf_8MRr55xg?e=Uiijqk" class="btn btn-view-dashboard">View Dashboard</a>
+                <a href="https://medium.com/@saibhargavkarnati/blinkit-dashboard-overview-40c3be472d1b" class="btn btn-view-dashboard ms-2">Read Full Blog on Medium</a>
+                <a href="https://github.com/MadScientist29/blinkit-dashboard-overview" class="btn btn-view-dashboard ms-2">GitHub Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Business Questions Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">Key Business Questions Answered</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Overall Sales and Performance Metrics</h5>
+                    <p>Total Sales: 1.20M<br>Average Sales: 141 units per transaction<br>Items Sold: 9K<br>Average Customer Rating: 3.921</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Sales by Outlet Type, Location, and Size</h5>
+                    <p>Supermarket Type 1 sales: 787.55K<br>Tier 3 sales: 472.13K<br>Large outlet contribution: 507.9K</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Sales by Product Categories</h5>
+                    <p>Fruits & Vegetables: 0.18M<br>Snack Foods: 0.18M<br>Household Items: 0.14M<br>Frozen Foods: 0.12M</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Impact of Fat Content on Sales</h5>
+                    <p>Low Fat Products Sales: 425.36K<br>Regular Fat Products: 776.32K</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Item Visibility by Outlet Type</h5>
+                    <p>Supermarket Type 1 has the highest item visibility (338.65)</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Outlet Size Distribution</h5>
+                    <p>Medium Outlet Sales: 37%<br>Large Outlet Contribution: 42.27%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="text-center">Dashboard Features & Analysis</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Outlet Establishment Trend</h5>
+                        <p>A line graph shows the trend in the number of outlets established over time, peaking in 2018 with 205K outlets.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Top Metrics (KPIs)</h5>
+                        <p>Total Sales: 1.20M<br>Average Sales: 141 units<br>Number of Items: 9K<br>Average Rating: 3.921</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Fat Content Analysis</h5>
+                        <p>A pie chart shows the split between Low Fat and Regular Fat products, with insights into consumer health preferences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Outlet Location Breakdown</h5>
+                        <p>A bar chart breaks down outlet locations by tier, with Tier 3 outlets generating the highest sales (71.3%).</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Go Back Button -->
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-back">Go Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sai Bhargav Karnati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
