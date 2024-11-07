@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HR Analytics Dashboard - Sai Bhargav Karnati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styling the body with a dark theme */
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+        .navbar a:hover {
+            color: #00d4ff !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .summary-card {
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .summary-card h5 {
+            color: #00d4ff;
+        }
+
+        .btn-view-dashboard {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-view-dashboard:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-back {
+            background-color: #f8f9fa;
+            color: #343a40;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-back:hover {
+            background-color: #e0e0e0;
+        }
+
+        .feature-section {
+            background-color: #2b2b2b;
+            padding: 60px 0;
+        }
+
+        .feature-section h2 {
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sai Bhargav Karnati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About & Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">HR Analytics Dashboard Overview 👩‍💼📊</h1>
+            <p class="lead">An interactive dashboard providing key insights into employee attrition, performance, and HR metrics.</p>
+            <img src="img/HR Analytics Dashboard.png" alt="HR Analytics Dashboard" class="dashboard-img mt-4">
+            <div class="mt-4">
+                <a href="https://umbc-my.sharepoint.com/:u:/g/personal/skarnat1_umbc_edu/EfRkgkfTNS1FicYgjq33Uy0Bk8v2xAwL8GvZgihK-Nh8GA?e=S1aDVf" class="btn btn-view-dashboard">View Dashboard</a>
+                <a href="https://medium.com/@saibhargavkarnati/hr-analytics-dashboard-using-powerbi-96ec1a680631" class="btn btn-view-dashboard ms-2">Read Full Blog on Medium</a>
+                <a href="https://github.com/MadScientist29/HR-Analytics-Dashboard-using-PowerBI/tree/main" class="btn btn-view-dashboard ms-2">GitHub Project</a>
+            </div>
+           <!-- <a href="https://medium.com/@saibhargavkarnati/hr-analytics-dashboard-using-powerbi-96ec1a680631" class="btn btn-view-dashboard mt-4" target="_blank">View Full Blog</a> --> 
+        </div>
+    </section>
+
+    <!-- Key Business Questions Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">Key Business Questions Answered 📈</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Employee Attrition 📉</h5>
+                    <p>Understand the reasons for employee attrition and identify patterns in high turnover departments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Performance Metrics 💼</h5>
+                    <p>Analyze key performance indicators (KPIs) such as employee efficiency, department performance, and goal completion rates.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Retention Strategies 🔄</h5>
+                    <p>Identify which strategies help retain top-performing employees and which departments have the highest success rates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Employee Satisfaction 😊</h5>
+                    <p>Measure employee satisfaction through survey results, helping HR improve working conditions and employee engagement.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Salary & Compensation Analysis 💰</h5>
+                    <p>Compare salaries across departments to ensure fair compensation and identify areas for salary adjustments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summary-card">
+                    <h5>Diversity & Inclusion 🌍</h5>
+                    <p>Track diversity metrics within the company, ensuring that all departments are inclusive and equitable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="text-center">Dashboard Features & Analysis 🛠️</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Attrition Trends 📅</h5>
+                        <p>A line graph that displays employee attrition rates over time, helping HR spot trends and take preventative measures.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Salary vs. Performance Correlation 📊</h5>
+                        <p>A scatter plot that analyzes the correlation between employee performance and salary, helping adjust compensation strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Department Breakdown 🏢</h5>
+                        <p>A bar chart that breaks down performance, attrition, and satisfaction rates by department, providing a high-level view of the company’s health.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="summary-card">
+                        <h5>Diversity Metrics 🌍</h5>
+                        <p>A dashboard section that tracks diversity across gender, race, and age, promoting a more inclusive workplace.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Go Back Button -->
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-back">Go Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sai Bhargav Karnati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
