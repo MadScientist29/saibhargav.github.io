@@ -1,0 +1,197 @@
+/* General Styling for Dark Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+.navbar {
+    background-color: #0f3460;
+    padding: 1rem;
+}
+
+.navbar .nav-link {
+    color: #eaeaea;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #00d4ff;
+}
+
+/* Sections */
+.container {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #00d4ff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* About Section */
+.about-section {
+    background-color: #16213e;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+    max-width: 180px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 212, 255, 0.3);
+}
+
+.about-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #eaeaea;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #00d4ff;
+    border: none;
+    color: #1a1a2e;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #00b3cc;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #00d4ff;
+    border: 2px solid #00d4ff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #00d4ff;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #0f3460;
+    padding: 20px;
+    text-align: center;
+    color: #eaeaea;
+}
+
+/* Projects */
+.card {
+    background-color: #16213e;
+    color: #eaeaea;
+    border: none;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 212, 255, 0.2);
+}
+
+.card .card-title {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card .btn-primary {
+    background-color: #00d4ff;
+    color: #1a1a2e;
+    border-radius: 20px;
+}
+
+.card .btn-primary:hover {
+    background-color: #00b3cc;
+    color: #fff;
+}
+
+/* Blogs and Research */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #00b3cc;
+}
+
+
+/* Interest Boxes */
+.interest-box {
+    background-color: #1a1a2e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.interest-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 212, 255, 0.2);
+}
+
+.interest-box h4 {
+    color: #00d4ff;
+}
+
+.interest-box p {
+    color: #eaeaea;
+}
